@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - No Hunger</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <header>
+        <h1>Register for Food Donation</h1>
+        <nav>
+            <ul>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="Donations.html">Donations</a></li>
+                <li><a href="Register.html">Register</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Register Your Restaurant for Donation</h2>
+        <form action="Register.php" method="POST">
+            <label for="restaurant_name">Restaurant Name:</label>
+            <input type="text" id="restaurant_name" name="restaurant_name" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="food_items">Food Items Left Over:</label>
+            <textarea id="food_items" name="food_items" required></textarea>
+
+            <label for="donation_place">Preferred Donation Place:</label>
+            <input type="text" id="donation_place" name="donation_place">
+
+            <label for="contact_person">Contact Person:</label>
+            <input type="text" id="contact_person" name="contact_person" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 No Hunger. All rights reserved.</p>
+    </footer>
+</body>
+</html>
